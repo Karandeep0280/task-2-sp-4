@@ -16,7 +16,7 @@ on:
 
 jobs:
   
- job1:
+  job1:
    
     runs-on: ubuntu-latest
 
@@ -25,25 +25,26 @@ jobs:
       
       - uses: actions/checkout@v3
       - uses: actions/setup-python@v4
-      
+        with:
+          python-version: '3.10' 
       
       - name: Run a one-line script
-        run: echo Hello, world!
+        run: python my.py
 
       
       # - name: Run a multi-line script
       #   run: |
       #     echo Add other actions to build,
       #     echo test, and deploy your project.
-  # job2:
+  job2:
     
-  #     - runs-on: ubantu-latest
-  #   - uses: actions/setup-python@v4
+    runs-on: ubantu-latest
 
-  #   steps: 
-  #     -uses: actions/checkout@v3
-
-
-
-  #     -name: my name
-  #     -run: hello i am karan
+    steps: 
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
+        with:
+          python-version: '3.10' 
+      
+      -name: my name
+      -run: python myfolder/**
