@@ -37,7 +37,8 @@ jobs:
       #     echo test, and deploy your project.
 job2:
    
-   runs-on: ubantu-latest
+    - runs-on: ubantu-latest
+   - uses: actions/setup-python@v4
 
    steps: 
     -uses: actions/checkout@v3
