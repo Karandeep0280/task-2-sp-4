@@ -35,7 +35,7 @@ jobs:
       #   run: |
       #     echo Add other actions to build,
       #     echo test, and deploy your project.
-job2:
+ job2:
    
     - runs-on: ubantu-latest
    - uses: actions/setup-python@v4
