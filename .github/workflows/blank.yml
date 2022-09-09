@@ -20,25 +20,33 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      
       - uses: actions/checkout@v3
       - uses: actions/setup-python@v4
         with:
           python-version: '3.10' 
-       
-      - name: Run a one-line script
-        run: python my.py
+      - run: python my.py
+  
 
-      
-      
-  job2:
+   job_2:
     runs-on: ubuntu-latest
 
-    steps: 
+    steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-python@v4
         with:
           python-version: '3.10' 
+      - run: python myfolder/**
+        
       
-      - name: my name
-        run: python myfolder/**
+      
+  # job2:
+  #   runs-on: ubuntu-latest
+
+  #   steps: 
+  #     - uses: actions/checkout@v3
+  #     - uses: actions/setup-python@v4
+  #       with:
+  #         python-version: '3.10' 
+      
+  #     - name: my name
+  #       run: python myfolder/**
