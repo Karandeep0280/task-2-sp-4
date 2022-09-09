@@ -15,7 +15,7 @@ on:
 
 
 jobs:
-  
+
   job_1:
     runs-on: ubuntu-latest
 
@@ -27,7 +27,7 @@ jobs:
       - run: python my.py
   
 
-   job_2:
+  job_2:
     runs-on: ubuntu-latest
 
     steps:
